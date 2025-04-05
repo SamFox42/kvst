@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кавказ.САЙТ - Разработка веб-сайтов в регионе Кавказских Минеральных Вод</title>
+    <meta name="description" content="Профессиональная разработка веб-сайтов под ключ в регионе КМВ. От сайтов-визиток до полноценных веб-приложений.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <h1>Кавказ<span>.САЙТ</span></h1>
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Главная</a></li>
+                    <li><a href="#services" class="nav-link">Услуги</a></li>
+                    <li><a href="#portfolio" class="nav-link">Портфолио</a></li>
+                    <li><a href="#testimonials" class="nav-link">Отзывы</a></li>
+                    <li><a href="#contact" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-backdrop"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="fade-in">Кавказ.САЙТ</h1>
+                <h2 class="fade-in delay-1">Современные веб-сайты в регионе Кавказских Минеральных Вод</h2>
+                <p class="fade-in delay-2">От простых сайтов-визиток до полноценных веб-приложений. Мы создаем современные, функциональные и эстетичные веб-сайты, которые приводят клиентов.</p>
+                <div class="hero-cta fade-in delay-3">
+                    <a href="#services" class="btn btn-primary">Наши услуги</a>
+                    <a href="#contact" class="btn btn-secondary">Связаться с нами</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div>
+                <span class="scroll-arrow"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>О нас</h2>
+                <p>Мы создаем уникальные цифровые решения для бизнеса в регионе КМВ</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1691446834673-56b068a06f81" alt="Горы Кавказа" loading="lazy">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Веб-разработка с душой Кавказа</h3>
+                    <p>Кавказ.САЙТ - это новая команда молодых и талантливых разработчиков и дизайнеров, объединенных общей целью: создавать красивые и функциональные веб-сайты для бизнеса и частных лиц в регионе Кавказских Минеральных Вод.</p>
+                    <p>Мы вдохновляемся величественной природой Кавказа и стремимся передать эту красоту и величие через наши работы. Каждый проект для нас особенный, и мы подходим к нему с полной отдачей и вниманием к деталям.</p>
+                    <div class="statistics">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="15">0</span>
+                            <span class="stat-label">Реализованных проектов</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="10+">0</span>
+                            <span class="stat-label">Довольных клиентов</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="3">0</span>
+                            <span class="stat-label">Года опыта в разработке веб-сайтов</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Наши услуги</h2>
+                <p>Выберите тариф, который подходит именно вам</p>
+            </div>
+            
+            <div class="service-categories">
+                <div class="category-toggle active" data-category="main">Основные тарифы</div>
+                <div class="category-toggle" data-category="additional">Дополнительные услуги</div>
+            </div>
+
+            <div class="services-container main-services active">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <h3>Сайт-визитка</h3>
+                    <p>Одностраничный сайт для личного представления или небольшого бизнеса</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Одна страница</li>
+                        <li><i class="fas fa-check"></i> Адаптивный дизайн</li>
+                        <li><i class="fas fa-check"></i> Базовая SEO-оптимизация</li>
+                        <li><i class="fas fa-check"></i> Форма обратной связи</li>
+                    </ul>
+                    <div class="service-price">5 000 ₽</div>
+                    <a href="#contact" class="btn btn-service">Заказать</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Лендинг эконом</h3>
+                    <p>Одностраничный сайт для продвижения услуги или продукта</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Одна страница</li>
+                        <li><i class="fas fa-check"></i> Адаптивный дизайн</li>
+                        <li><i class="fas fa-check"></i> SEO-оптимизация</li>
+                        <li><i class="fas fa-check"></i> Форма заказа/связи</li>
+                        <li><i class="fas fa-check"></i> Анимации</li>
+                    </ul>
+                    <div class="service-price">10 000 ₽</div>
+                    <a href="#contact" class="btn btn-service">Заказать</a>
+                </div>
+
+                <div class="service-card featured">
+                    <div class="service-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="featured-label">Популярный</div>
+                    <h3>Лендинг стандарт</h3>
+                    <p>Многостраничный сайт для бизнеса среднего размера</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> До 3 страниц</li>
+                        <li><i class="fas fa-check"></i> Индивидуальный дизайн</li>
+                        <li><i class="fas fa-check"></i> Расширенная SEO-оптимизация</li>
+                        <li><i class="fas fa-check"></i> Интеграция с соцсетями</li>
+                        <li><i class="fas fa-check"></i> Интерактивные элементы</li>
+                        <li style="color: #007aff;"> <strong>БЕСПЛАТНЫЙ ДОМЕН .RU НА ГОД!</strong></li>
+                    </ul>
+                    <div class="service-price">15 000 ₽</div>
+                    <a href="#contact" class="btn btn-primary">Заказать</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Лендинг премиум</h3>
+                    <p>Полноценный сайт для серьезного бизнеса</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> До 10 страниц</li>
+                        <li><i class="fas fa-check"></i> Премиум дизайн</li>
+                        <li><i class="fas fa-check"></i> Полная SEO-оптимизация</li>
+                        <li><i class="fas fa-check"></i> Интеграция с CRM</li>
+                        <li><i class="fas fa-check"></i> Продвинутая аналитика</li>
+                        <li style="color: #007aff;"> <strong>БЕСПЛАТНЫЙ ДОМЕН .RU НА ГОД! </strong></li>
+                    </ul>
+                    <div class="service-price">30 000 ₽</div>
+                    <a href="#contact" class="btn btn-service">Заказать</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Веб-приложение</h3>
+                    <p>Полноценное интерактивное веб-приложение</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Многостраничное приложение</li>
+                        <li><i class="fas fa-check"></i> Система администрирования</li>
+                        <li><i class="fas fa-check"></i> Личные кабинеты</li>
+                        <li><i class="fas fa-check"></i> Платежные интеграции</li>
+                        <li><i class="fas fa-check"></i> API для внешних сервисов</li>
+                    </ul>
+                    <div class="service-price">50 000 ₽</div>
+                    <a href="#contact" class="btn btn-service">Заказать</a>
+                </div>
+            </div>
+
+            <div class="services-container additional-services">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Улучшение сайта</h3>
+                    <p>Дополнение, настройка и улучшение существующего сайта</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Аудит текущего сайта</li>
+                        <li><i class="fas fa-check"></i> Исправление ошибок</li>
+                        <li><i class="fas fa-check"></i> Добавление функционала</li>
+                        <li><i class="fas fa-check"></i> Обновление дизайна</li>
+                    </ul>
+                    <div class="service-price">10 000 ₽</div>
+                    <a href="#contact" class="btn btn-service">Заказать</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Дизайн для сайта</h3>
+                    <p>Создание уникального дизайна для вашего сайта</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> UI/UX дизайн</li>
+                        <li><i class="fas fa-check"></i> Проектирование интерфейсов</li>
+                        <li><i class="fas fa-check"></i> Фирменный стиль</li>
+                        <li><i class="fas fa-check"></i> Адаптивный дизайн</li>
+                    </ul>
+                    <div class="service-price">15 000 ₽</div>
+                    <a href="#contact" class="btn btn-service">Заказать</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Разработка приложений</h3>
+                    <p>Создание мобильных приложений для Android/iOS</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Нативные приложения</li>
+                        <li><i class="fas fa-check"></i> Кроссплатформенные решения</li>
+                        <li><i class="fas fa-check"></i> Интеграция с API</li>
+                        <li><i class="fas fa-check"></i> Публикация в магазинах</li>
+                    </ul>
+                    <div class="service-price">от 20 000 ₽</div>
+                    <a href="#contact" class="btn btn-service">Заказать</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Разработка скриптов</h3>
+                    <p>Создание скриптов или макросов для автоматизации</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Парсеры данных</li>
+                        <li><i class="fas fa-check"></i> Скрипты автоматизации</li>
+                        <li><i class="fas fa-check"></i> Чат-боты</li>
+                        <li><i class="fas fa-check"></i> Обработка данных</li>
+                    </ul>
+                    <div class="service-price">5 000 ₽</div>
+                    <a href="#contact" class="btn btn-service">Заказать</a>
+                </div>
+            </div>
+
+            <div class="custom-offer">
+                <div class="custom-offer-content">
+                    <h3>У вас особые требования?</h3>
+                    <p>Мы готовы обсудить индивидуальное решение для вашего проекта</p>
+                    <a href="#contact" class="btn btn-custom">Предложить своё</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Наши работы</h2>
+                <p>Взгляните на проекты, которые мы уже реализовали</p>
+            </div>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Все проекты</button>
+                <button class="filter-btn" data-filter="landing">Лендинги</button>
+                <button class="filter-btn" data-filter="business">Бизнес-сайты</button>
+                <button class="filter-btn" data-filter="ecommerce">Интернет-магазины</button>
+                <button class="filter-btn" data-filter="app">Веб-приложения</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="landing">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1705925524680-190420224345" alt="Лендинг для туристической компании" loading="lazy">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <h3>Горы Кавказа</h3>
+                            <p>Лендинг для туристической компании</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="business">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1635658753628-7f56f2909845" alt="Сайт для санатория" loading="lazy">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <h3>Санаторий "Целебный"</h3>
+                            <p>Многостраничный сайт для санатория</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="ecommerce">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Интернет-магазин местных продуктов" loading="lazy">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <h3>Дары Кавказа</h3>
+                            <p>Интернет-магазин местных продуктов</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="app">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1493421419110-74f4e85ba126" alt="Веб-приложение для бронирования экскурсий" loading="lazy">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <h3>ТурКМВ</h3>
+                            <p>Веб-приложение для бронирования экскурсий</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="business">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1494894578460-6707508a7fd0" alt="Сайт для гостиницы" loading="lazy">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <h3>Гостиница "Панорама"</h3>
+                            <p>Сайт с системой бронирования</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="landing">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1708036802566-32830c95b582" alt="Лендинг для фестиваля" loading="lazy">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <h3>Фестиваль "Кавказские ритмы"</h3>
+                            <p>Лендинг для музыкального фестиваля</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2>Как мы работаем</h2>
+                <p>Простой и прозрачный процесс создания вашего сайта</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Консультация</h3>
+                    <p>Мы обсуждаем ваши потребности, цели и ожидания от проекта</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>Планирование</h3>
+                    <p>Составляем план работы, определяем сроки и бюджет</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Дизайн</h3>
+                    <p>Разрабатываем дизайн-концепцию, учитывая ваши пожелания</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Разработка</h3>
+                    <p>Программируем сайт, внедряем необходимый функционал</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Тестирование</h3>
+                    <p>Проверяем работоспособность всех элементов сайта</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <div class="step-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Запуск</h3>
+                    <p>Публикуем готовый сайт и обучаем вас работе с ним</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Отзывы клиентов</h2>
+                <p>Что говорят о нас те, кто уже воспользовался нашими услугами</p>
+            </div>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">Ребята из Кавказ.САЙТ создали для нашего санатория превосходный веб-сайт. Современный дизайн, удобная система бронирования, мобильная версия — всё на высшем уровне!</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Александр Петров</h4>
+                                <p>Директор санатория "Целебный"</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">Заказывала лендинг для своей кондитерской. Результат превзошел все ожидания! Сайт получился красивым, информативным и главное — он действительно приводит клиентов!</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Мария Иванова</h4>
+                                <p>Владелица кондитерской "Сладкоежка"</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">Команда Кавказ.САЙТ разработала для нас интернет-магазин. Работа была выполнена в срок, все наши пожелания учтены. Особенно порадовала адаптивность сайта и удобная админка.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Дмитрий Сидоров</h4>
+                                <p>Владелец магазина "Дары Кавказа"</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">Обратилась за созданием сайта-визитки для своей юридической практики. Результатом очень довольна! Элегантный дизайн, быстрая загрузка, все контакты на виду — именно то, что нужно.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="author-info">
+                                <h4>Елена Козлова</h4>
+                                <p>Юрист</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="prev-btn" aria-label="Предыдущий отзыв">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="slider-dots"></div>
+                    <button class="next-btn" aria-label="Следующий отзыв">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Часто задаваемые вопросы</h2>
+                <p>Ответы на популярные вопросы о наших услугах</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Сколько времени занимает создание сайта?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Сроки разработки зависят от сложности проекта. Сайт-визитка или простой лендинг может быть готов за 5-7 дней, многостраничный сайт — 2-4 недели, а сложное веб-приложение может потребовать от 1 до 3 месяцев разработки.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Что входит в стоимость разработки?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>В стоимость входит: разработка дизайна, верстка, программирование, базовая SEO-оптимизация, тестирование и запуск сайта. Дополнительно можно заказать наполнение контентом, подключение аналитики, настройку рекламных кампаний и т.д.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Можно ли вносить правки в процессе разработки?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, мы приветствуем активное участие клиента в процессе разработки. Вы можете вносить правки на этапе согласования дизайна и прототипа. После начала программирования существенные изменения могут повлиять на сроки и стоимость.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Предоставляете ли вы хостинг и домен?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Мы можем помочь с выбором и регистрацией домена, а также с подбором подходящего хостинга. Эти услуги оплачиваются отдельно по тарифам выбранных провайдеров. Также мы настраиваем сайт на вашем хостинге и обеспечиваем запуск.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Как происходит оплата?</h3>
+                        <div class="faq-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Оплата происходит либо через сервис Kwork (с полными гарантиями, но из-за коммиссии в 20% цена подорожает соответственно на 20%), либо переводом на карту. При переводе на карту работа выполняется поэтапно. Обычно мы берем предоплату 10-50% для начала работ, остальная сумма вносится после завершения проекта. Для крупных проектов возможна разбивка оплаты на несколько этапов.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Связаться с нами</h2>
+                <p>Расскажите о своем проекте, и мы поможем воплотить его в жизнь</p>
+            </div>
+    
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <h3>Адрес</h3>
+                            <p>Мы полностью онлайн!</p>
+                        </div>
+                    </div>
+    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <h3>Телефон</h3>
+                            <p><a href="tel:+79887684393">+7 (988) 768-43-93</a></p>
+                        </div>
+                    </div>
+    
+                    <div class="contact-social">
+                        <h3>Мы в социальных сетях</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="contact">Способ связи</label>
+                            <select id="contact" name="contact">
+                                <option value="">Выберите способ связи</option>
+                                <option value="phone">По телефону</option>
+                                <option value="whatsapp">В WhatsApp</option>
+                                <option value="telegram">В Telegram</option>
+                            </select>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="service">Интересующая услуга</label>
+                            <select id="service" name="service">
+                                <option value="">Выберите услугу</option>
+                                <option value="vizitka">Сайт-визитка</option>
+                                <option value="landing-econom">Лендинг эконом</option>
+                                <option value="landing-standard">Лендинг стандарт</option>
+                                <option value="landing-premium">Лендинг премиум</option>
+                                <option value="web-app">Веб-приложение</option>
+                                <option value="update">Улучшение сайта</option>
+                                <option value="design">Дизайн для сайта</option>
+                                <option value="mobile-app">Мобильное приложение</option>
+                                <option value="script">Разработка скриптов</option>
+                                <option value="custom">Своё предложение</option>
+                            </select>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="payment">Способ оплаты</label>
+                            <select id="payment" name="payment">
+                                <option value="">Выберите способ оплаты</option>
+                                <option value="card">По карте</option>
+                                <option value="kwork">Kwork</option>
+                                <option value="idk">Я не знаю, помогите мне определиться</option>
+                            </select>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+    
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="agree" name="agree" required>
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-text">Я согласен на обработку персональных данных</span>
+                            </label>
+                        </div>
+    
+                        <button type="submit" class="btn btn-submit">Отправить сообщение</button>
+                    </form>
+    
+                    <div class="form-success" id="formSuccess" style="display: none;">
+                        <div class="success-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Сообщение отправлено!</h3>
+                        <p>Спасибо за обращение. Мы свяжемся с вами в ближайшее время.</p>
+                    </div>
+                </div>
+    
+                <script>
+                 document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const formData = new FormData(this);
+    const data = {};
+    formData.forEach((value, key) => {
+        data[key] = value;
+    });
+
+    // Формируем сообщение и убираем переносы строк и специальные символы
+    let message = `Новое сообщение: Имя: ${data.name}, Email: ${data.email}, Телефон: ${data.phone || 'Не указан'}, Способ связи: ${data.contact || 'Не выбран'}, Интересующая услуга: ${data.service || 'Не выбрана'}, Способ оплаты: ${data.payment || 'Не выбран'}, Сообщение: ${data.message}`;
+    
+    // Удаляем переносы строк и заменяем специальные символы
+    message = message
+        .replace(/[\n\r]/g, ' ') // Убираем переносы строк
+        .replace(/[^\w\sа-яА-ЯёЁ.,:;-]/g, ''); // Оставляем только буквы, цифры, пробелы и некоторые знаки препинания
+
+    const botToken = '7674198251:AAGi5O2KQhjNurAMAnWLpNuKBEGyDthJsv0';
+    const chatId = '-1002600414658';
+    const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            if (data.ok) {
+                document.getElementById('contactForm').style.display = 'none';
+                document.getElementById('formSuccess').style.display = 'block';
+            } else {
+                alert('Ошибка при отправке сообщения');
+            }
+        })
+        .catch(error => {
+            console.error('Ошибка:', error);
+            alert('Произошла ошибка при отправке сообщения');
+        });
+});
+                </script>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Готовы начать проект?</h2>
+                <p>Свяжитесь с нами сегодня и получите бесплатную консультацию</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Оставить заявку</a>
+                    <a href="tel:+79887684393" class="btn btn-secondary"><i class="fas fa-phone-alt"></i> Позвонить</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Кавказ<span>.САЙТ</span></h2>
+                    <p>Современные веб-сайты для бизнеса в регионе КМВ</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Компания</h3>
+                        <ul>
+                            <li><a href="#home">Главная</a></li>
+                            <li><a href="#about">О нас</a></li>
+                            <li><a href="#services">Услуги</a></li>
+                            <li><a href="#portfolio">Портфолио</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Услуги</h3>
+                        <ul>
+                            <li><a href="#services">Сайты-визитки</a></li>
+                            <li><a href="#services">Лендинги</a></li>
+                            <li><a href="#services">Корпоративные сайты</a></li>
+                            <li><a href="#services">Веб-приложения</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Контакты</h3>
+                        <ul>
+                            <li><a href="tel:+79887684393">+7 (988) 768-43-93</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2023 Кавказ.САЙТ - Все права защищены</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
