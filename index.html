@@ -28,6 +28,12 @@
       gtag('config', 'G-GZVDGV67KF');
     </script>
     <script>
+      function getURLParameter(name) {
+        const url = window.location.href;
+        const regex = new RegExp("[?&]" + name + "=([^&#]*)", "i");
+        const result = regex.exec(url);
+        return result ? decodeURIComponent(result[1]) : null;
+      }
       function setCookie(name, value, days) {
         let expires = "";
         if (days) {
