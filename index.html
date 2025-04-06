@@ -27,7 +27,22 @@
     
       gtag('config', 'G-GZVDGV67KF');
     </script>
-
+    <script>
+      function setCookie(name, value, days) {
+        let expires = "";
+        if (days) {
+          const date = new Date();
+          date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+          expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "") + expires + "; path=/";
+      }
+    
+      const rParam = getURLParameter('r');
+      if (rParam) {
+        setCookie('rCookie', rParam, 30);
+      }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -771,10 +786,27 @@
     let message = `Новое сообщение: Имя: ${data.name}, Email: ${data.email}, Телефон: ${data.phone || 'Не указан'}, Способ связи: ${data.contact || 'Не выбран'}, Интересующая услуга: ${data.service || 'Не выбрана'}, Способ оплаты: ${data.payment || 'Не выбран'}, Сообщение: ${data.message}`;
     
     // Удаляем переносы строк и заменяем специальные символы
-    message = message
-        .replace(/[\n\r]/g, ' ') // Убираем переносы строк
-        .replace(/[^\w\sа-яА-ЯёЁ.,:;-]/g, ''); // Оставляем только буквы, цифры, пробелы и некоторые знаки препинания
+    //message = message
+    //    .replace(/[\n\r]/g, ' ') // Убираем переносы строк
+    //    .replace(/[^\w\sа-яА-ЯёЁ.,:;-]/g, ''); // Оставляем только буквы, цифры, пробелы и некоторые знаки препинания
 
+    function getCookie(name) {
+        const nameEQ = name + "=";
+        const ca = document.cookie.split(';');
+        for (let i = 0; i < ca.length; i++) {
+          let c = ca[i];
+          while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+          if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+      }
+    
+      // Получаем значение куки 'rCookie'
+      const rCookieValue = getCookie('rCookie');
+      if (rCookieValue) {
+        message = `Новое сообщение: Имя: ${data.name}, Email: ${data.email}, Телефон: ${data.phone || 'Не указан'}, Способ связи: ${data.contact || 'Не выбран'}, Интересующая услуга: ${data.service || 'Не выбрана'}, Способ оплаты: ${data.payment || 'Не выбран'}, Сообщение: ${data.message}, Куки: ${rCookieValue}`;
+      }
+                     
     const botToken = '7674198251:AAGi5O2KQhjNurAMAnWLpNuKBEGyDthJsv0';
     const chatId = '-1002600414658';
     const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
